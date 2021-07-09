@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_products_variants",
+  "info": {
+    "name": "variants",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string"
+    },
+    "sleeve": {
+      "type": "enumeration",
+      "enum": [
+        "long",
+        "short"
+      ]
+    },
+    "size": {
+      "type": "component",
+      "repeatable": false,
+      "component": "products.size"
+    }
+  }
+}

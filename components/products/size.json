@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_products_sizes",
+  "info": {
+    "name": "size",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "m": {
+      "type": "integer"
+    },
+    "l": {
+      "type": "integer"
+    },
+    "xl": {
+      "type": "integer"
+    },
+    "xxl": {
+      "type": "integer"
+    }
+  }
+}

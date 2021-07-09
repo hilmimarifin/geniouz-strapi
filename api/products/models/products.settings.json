@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "purchasePrice": {
+      "type": "integer"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "categories": {
+      "via": "products",
+      "collection": "categories"
+    },
+    "shopeeUrl": {
+      "type": "string"
+    },
+    "tokpedUrl": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.variants"
+    },
+    "salePrice": {
+      "type": "integer"
+    },
+    "isGeniouz": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}
