@@ -52,10 +52,9 @@
     "salePrice": {
       "type": "integer"
     },
-    "isGeniouz": {
-      "type": "boolean",
-      "default": false,
-      "required": false
+    "brand": {
+      "via": "products",
+      "model": "brand"
     }
   }
 }
